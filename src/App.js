@@ -59,7 +59,7 @@ class Test extends React.Component{
   };
   //gets longtitude and langtitude data based on location name, then calls weather api
   callGeoApi(arg){
-    let url = `http://api.openweathermap.org/geo/1.0/direct?q=${arg}&limit=1&appid=a294a1674de39e1e6e98930eeb1562ba`
+    let url = `https://api.openweathermap.org/geo/1.0/direct?q=${arg}&limit=1&appid=a294a1674de39e1e6e98930eeb1562ba`
     fetch(url)
     .then(res => res.json())
     .then(json => {
